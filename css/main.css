@@ -1,181 +1,190 @@
 /***** BASE STYLES *****/
 
+@font-face{
+    font-family: 'Wisdom Script';
+    src: url('../fonts/wisdom-script.otf') format ('opentype');
+}
+
+/***** BODY *****/
+
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #2b2b2b;
+font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
 
-#about, #work, #contact {
-    height: 600px;
-}
-
-/***** GRID *****/
-
-.full-width {
+.container{
     width: 1200px;
     margin: 0 auto;
 }
 
-.half-width {
-    width: 600px;
-    float: left;
+h1,
+h2,
+h3,
+h4 {
+    color: black;
+    font-weight: 700px;
+    text-transform: uppercase;
 }
 
-.third-width {
-    width: 400px;
-    float: left;
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 12px;
+}
+
+p {
+    font-size: 14px;
+    padding: 0 30px;
+    line-height: 21px;
+    font-weight: normal;
 }
 
 /****** HEADER ******/
 
+
 header {
-    height: 800px;
-    background: url('../img/hero-image.png');
-    background-size: cover;
+  height: 110px;
+  margin: 0 auto;
 }
 
 header h1 {
-    padding: 65px 0 65px 25px;
-    font-family: 'Lora';
-    font-size: 30px;
-    color: #bbc085;
+  float: left;
+  margin: 0;
+  padding: 38px 0;
 }
 
-nav {
+header h1 span {
+  color: #77a466;
+}
+
+header nav {
     float: right;
-    padding: 75px 25px;
+    padding: 46px 0;
 }
-nav ul li{
-    display: inline-block;
+
+header nav ul {
+    margin: 0;
+    padding: 0;
 }
-nav ul li a {
+
+header nav ul li {
     text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 10px;
+    display: inline;
+}
+
+header nav ul li a {
     text-decoration: none;
-    font-size: 18px;
-    color: #828282;
-    padding-left: 80px;
+    color: #77a466;
 }
 
-header h2 {
-    width: 1000px;
-    clear: both;
-    font-family: 'Lora', serif;
-    font-size: 72px;
-    line-height: 80px;
-    color: #9b9b9b;
-    padding: 20px 0 20px 25px;
-}
-header h2 span {
-    color: #2b2b2b;
-}
 
-/****** ABOUT ******/
+/***** TOP *****/
 
-#about .full-width {
-    padding: 80px 0;
-}
-
-#about {
-  font-family: 'Lora', serif, 'Source Sans Pro';
-}
-
-#about h2 {
-    font-family: 'Lora', serif;
-    font-size: 36px;
-    padding-left: 50px;
-}
-
-#about p {
-    font-size: 21px;
-    color: #7f7f7f;
-    line-height: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-/****** WORK ******/
-
-#work {
-    background-color: #f9ceb7;
-    text-align: center;
-}
-
-#work .full-width {
-    padding: 115px 0;
-}
-
-#work img {
-    padding-bottom: 30px;
-}
-
-#work h3 {
-    font-family: 'Source Sans Pro';
-    font-size: 24px;
-    line-height: 32px;
-    width: 300px;
+.top-section,
+.bottom-section {
     margin: 0 auto;
+    clear: both;
 }
 
-#work p {
-    font-family: 'Lora';
-    font-size: 18px;
-    line-height: 30px;
-    padding: 0 35px;
+.hero-image {
+	height: auto;
+	float: left;
 }
 
-/****** CONTACT ******/
-
-#contact {
-    background-color: #ebebeb;
+.hero-image img {
+	border-bottom: 3px solid #77a466;
+  border-top: 3px solid #77a466;
 }
 
-#contact .full-width {
-    padding: 110px 0;
+.main-title {
+    height: auto;
+    float: left;
 }
 
-#contact img#contact-img {
-    margin-left: 25px;
-    border: 12px solid #ffffff;
+.main-title h3 {
+    text-align: left;
+    color: #77a466;
+    padding: 5px 0;
 }
 
-#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
-    padding-left: 115px;
-}
-#contact #envelope {
-    padding: 0 10px 0 115px;
-}
-
-#contact h2 {
-    font-family: 'Lora';
-    font-size: 36px;
-    line-height: 44px;
-}
-#contact #email-header{
-    font-size: 32px;
-    font-weight: normal;
-    line-height: 44px;
-    margin: -30px 0 5px 0;
-}
-#contact #socialmedia-header {
-    font-weight: bold;
-    font-size: 29px;
-    line-height: 44px;
-    margin: 40px 0 0 0;
-}
-#contact a {
-    text-decoration: none;
-    color: #c49075;
-    font-weight: bold;
-    font-size: 28px;
+.main-title p {
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0;
 }
 
-#contact ul {
-    list-style: none;
+/***** BOTTOM *****/
+
+.section-one,
+.section-two,
+.section-three {
+	width: 399px;
+  float: left;
+	height: auto;
+	border-top: 1px solid #eee;
 }
-#contact ul li {
-     display: inline-block;
+
+.section-one h4 {
+	padding: 10px 0;
 }
-#contact ul img {
-    font-size: 32px;
-    padding-right: 48px;
+
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+
+.section-two h4,
+.section-three h4,
+.section-three p {
+	padding: 10px 30px;
+}
+
+.menu {
+  padding: 0;
+	list-style: none;
+}
+
+.menu li {
+  color:#77a466;
+	padding: 10px 0;
+}
+
+.reviews {
+  font-size: 16px;
+	line-height: 21px;
+	color: #333;
+}
+
+.address {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/***** FOOTER *****/
+
+footer {
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  clear: both;
+  border-top: 3px solid #eee;
+}
+
+footer span {
+    font-family: 'Wisdom Script', cursive;
+    color: #77a466;
+    font-size: 14px;
+    text-transform: lowercase;
 }
